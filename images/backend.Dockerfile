@@ -7,7 +7,8 @@ COPY repos ../apps
 
 USER root
 
-RUN install-app castlecraft && \
+RUN install-app erpnext && \
+    install-app castlecraft && \
     install-app microsoft_integration
 
 USER frappe
