@@ -7,8 +7,7 @@ COPY repos ../apps
 
 USER root
 
-RUN install-app erpnext && \
-    install-app hrms && \
+RUN install-app hrms && \
     install-app erpnext_germany && \
     install-app erpnext_datev && \
     install-app castlecraft && \
