@@ -8,8 +8,8 @@ COPY repos ../apps
 USER root
 
 #RUN install-app hrms 
-#RUN install-app erpnext_germany
 RUN install-app erpnext_datev
+RUN install-app erpnext_germany
 #RUN install-app castlecraft
 #RUN install-app microsoft_integration
 
