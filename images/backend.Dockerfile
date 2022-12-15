@@ -7,10 +7,10 @@ COPY repos ../apps
 
 USER root
 
-RUN install-app hrms && \
-    install-app erpnext_germany && \
-    install-app erpnext_datev && \
-    install-app castlecraft && \
-    install-app microsoft_integration
+RUN install-app hrms 
+RUN install-app erpnext_germany
+RUN install-app erpnext_datev
+RUN install-app castlecraft
+RUN install-app microsoft_integration
 
 USER frappe
