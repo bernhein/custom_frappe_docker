@@ -9,7 +9,7 @@ RUN bench init --version=${FRAPPE_VERSION} --skip-redis-config-generation --verb
 WORKDIR /home/frappe/frappe-bench
 
 # Uncomment following if ERPNext is required
-# ARG ERPNEXT_VERSION
+ARG ERPNEXT_VERSION
 RUN bench get-app --branch=${ERPNEXT_VERSION} --skip-assets --resolve-deps erpnext
 
 COPY --chown=frappe:frappe repos apps
