@@ -3,7 +3,9 @@ name: Build latest images
 on:
   push:
     branches:
-      - main
+      #- main
+      - Customize
+      - Production
 
 jobs:
   build:
